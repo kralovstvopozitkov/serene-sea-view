@@ -85,6 +85,13 @@ td.season{font-family:var(--serif);font-size:1.12rem}
 td.season small{display:block;font-family:var(--sans);font-size:.85rem;color:var(--ink-soft)}
 .note{font-size:.95rem;color:var(--ink-soft);margin-top:18px;max-width:62ch}
 
+/* band */
+.band{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:760px){.band{grid-template-columns:repeat(4,1fr)}}
+.band figure{margin:0}
+.band img{width:100%;aspect-ratio:1/1;object-fit:cover;background:var(--foam)}
+.band figcaption{font-size:.95rem;color:var(--ink-soft);padding-top:.4rem}
+
 /* trips */
 .trips{display:grid;gap:30px 40px;margin-top:44px;grid-template-columns:1fr}
 @media(min-width:700px){.trips{grid-template-columns:1fr 1fr}}
@@ -209,6 +216,15 @@ footer{padding:26px 0 40px;font-size:.9rem;color:rgba(237,241,240,.6)}
         <p>Thoddoo sits at the top of Ari Atoll, next to some of the best snorkelling and diving water in the Maldives. Trips leave most mornings and we book them for you at reception the evening before.</p>
       </div>
     </div>
+    <div class="wrap" style="margin-top:46px">
+      <div class="band">
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Green%20Sea%20Turtle%20grazing%20seagrass.jpg?width=800" alt="Green sea turtle grazing" loading="lazy"><figcaption>Turtles</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Maldives%20manta%20ray.jpg?width=800" alt="Manta ray in the Maldives" loading="lazy"><figcaption>Manta rays</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Blacktip%20reef%20shark.jpg?width=800" alt="Blacktip reef shark in the Maldives" loading="lazy"><figcaption>Reef sharks</figcaption></figure>
+        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sandbank%20Malediven%20%2829447070765%29.jpg?width=800" alt="Sandbank in the Maldives" loading="lazy"><figcaption>Sandbanks</figcaption></figure>
+      </div>
+    </div>
+
     <div class="trips">
       <div class="trip"><h3>Turtles on the house reef</h3><p>The reef starts about four hundred metres off the beach and green turtles feed on it most days. Two hours with a guide, gear included.</p></div>
       <div class="trip"><h3>Snorkelling with manta rays</h3><p>A boat ride to the cleaning stations off Rasdhoo, where mantas circle slowly enough to swim alongside them.</p></div>
@@ -258,7 +274,7 @@ footer{padding:26px 0 40px;font-size:.9rem;color:rgba(237,241,240,.6)}
       <div><h3>Instagram</h3><p><a href="https://www.instagram.com/sereneseaview_hotel">@sereneseaview_hotel</a></p></div>
     </div>
     <a class="btn" href="mailto:info@sereneseaview.com?subject=Booking%20enquiry%20%E2%80%93%20Serene%20Sea%20View">Send a booking enquiry</a>
-    <footer>Serene Sea View &middot; Zeyvaru, Thoddoo 09010, Alif Alif Atoll, Republic of Maldives<br>Operated by Serene Sky Maldives Pvt Ltd</footer>
+    <footer>Serene Sea View &middot; Zeyvaru, Thoddoo 09010, Alif Alif Atoll, Republic of Maldives<br>Operated by Serene Sky Maldives Pvt Ltd<br><span style="font-size:.82rem;opacity:.75">Marine life photographs: P. Lindgren, Gordon Flood, Jan Derk and Michael Gredenberg via Wikimedia Commons (CC BY / CC BY-SA / public domain)</span></footer>
   </div>
 </section>
 
