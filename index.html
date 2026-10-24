@@ -29,21 +29,19 @@ a{color:inherit}
 
 /* hero */
 .herowrap{position:relative}
-.hero-img{width:100%;height:clamp(440px,80vh,700px);object-fit:cover;object-position:center 60%;display:block;background:var(--ink)}
-.intro{position:absolute;left:0;right:0;bottom:0;padding:0 0 42px;
-  background:linear-gradient(180deg,rgba(12,42,51,0) 0%,rgba(12,42,51,.30) 42%,rgba(12,42,51,.88) 100%);
-  color:#fff}
+.hero-img{width:100%;aspect-ratio:4/3;height:auto;max-height:70vh;object-fit:cover;object-position:center 100%;display:block;background:var(--ink)}
+.intro{padding:30px 0 40px;color:var(--ink)}
 .intro .place{display:inline-block;margin-bottom:1rem;font-size:.98rem;letter-spacing:.02em;
-  color:rgba(255,255,255,.86);border-left:2px solid var(--teak);padding-left:.75rem}
-.intro h1{font-size:clamp(2.3rem,8.6vw,3.4rem);line-height:1.0;font-weight:300;max-width:14ch;color:#fff}
+  color:var(--ink-soft);border-left:2px solid var(--teak);padding-left:.75rem}
+.intro h1{font-size:clamp(2.3rem,8.6vw,3.4rem);line-height:1.02;font-weight:300;max-width:14ch;color:var(--ink)}
 .intro h1 em{font-style:italic}
-.intro p{margin:1rem 0 0;max-width:44ch;font-size:1.06rem;color:rgba(255,255,255,.92)}
+.intro p{margin:1rem 0 0;max-width:44ch;font-size:1.06rem;color:var(--ink-soft)}
 @media(min-width:860px){
-  .hero-img{height:clamp(360px,62vh,640px)}
-  .intro{position:static;background:none;color:inherit;padding:54px 0 64px}
-  .intro .place{color:var(--ink-soft);font-size:1rem;margin-bottom:1.3rem}
-  .intro h1{font-size:clamp(3rem,5.4vw,4.4rem);line-height:1.02;max-width:15ch;color:var(--ink)}
-  .intro p{margin-top:1.3rem;max-width:46ch;font-size:1.26rem;color:var(--ink-soft)}
+  .hero-img{aspect-ratio:auto;max-height:none;height:clamp(420px,72vh,780px)}
+  .intro{padding:54px 0 64px}
+  .intro .place{font-size:1rem;margin-bottom:1.3rem}
+  .intro h1{font-size:clamp(3rem,5.4vw,4.4rem);max-width:15ch}
+  .intro p{margin-top:1.3rem;max-width:46ch;font-size:1.26rem}
 }
 
 /* facts strip */
@@ -171,7 +169,7 @@ footer{padding:26px 0 40px;font-size:.9rem;color:rgba(237,241,240,.6)}
 <div class="wrap" style="margin-bottom:12px">
   <div class="mosaic">
     <figure><img src="img/terrace-view.jpg" alt="The sea seen from the top terrace of the hotel"><figcaption>The view from the top terrace</figcaption></figure>
-    <figure><img src="img/beach-palms.jpg" alt="Palms leaning over the beach on Thoddoo"></figure>
+    <figure><img src="img/hotel-facade.jpg" alt="Serene Sea View hotel, front entrance and balconies"><figcaption>The hotel from the entrance</figcaption></figure>
   </div>
 </div>
 
